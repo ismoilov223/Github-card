@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github card</title>
+    <link rel="stylesheet" href="dist/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="css/styles.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: Space Mono;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body id="body" class="h-full bg-[#F2F2F2] font-mono bodybgchanlh">
+    <div class="containers w-full flex justify-center items-center h-full">
+      <div class="box w-[730px]">
+        <section
+          class="row-logo flex justify-between items-center w-full bg-transparent"
+        >
+          <h1 class="font-bold text-[26px] text-[#222731]" id="titleclrchange">devfinder</h1>
+          <div class="mode-box flex gap-[16px]">
+            <p class="text-sm font-bold text-[#697C9A] tracking-[2.5px]">
+              DARK
+            </p>
+            <a href="#" onclick="bodybgchange()" class="">
+              <img src="images/svg/moon-icon.svg" alt="moon mode" />
+            </a>
+          </div>
+        </section>
+        <section class="row-search-form w-full mt-9 ">
+          <div
+          id="boxbgchange"
+            class="input-form w-full rounded-[15px] p-[9px_10px] flex justify-between items-center shadow-[0px_16px_30px_-10px] shadow-[#4660BB33] bg-[#FEFEFE] boxbgchanlh"
+          >
+            <div class="input-box flex items-center gap-6">
+              <img
+                src="images/svg/lupa.svg"
+                alt="lupa icon"
+                class="ml-[22px] w-5"
+              />
+              <input type="text" class="bg-transparent" placeholder="Search GitHub username…" />
+            </div>
+            <button
+              type="submit"
+              class="btn p-[12px_24px] bg-[#0079FF] rounded-lg font-bold text-[#fff]"
+            >
+              Search
+            </button>
+          </div>
+        </section>
+        <section class="row-content w-full mt-6">
+          <div
+          id="boxcontentbgchange"
+            class="content-box w-full bg-[#FEFEFE] p-12 flex gap-9 shadow-[0px_16px_30px_-10px] shadow-[#4660BB33] rounded-2xl"
+          >
+            <div class="content-box-left-container">
+              <img src="images/png/github-img.png" alt="github image" />
+            </div>
+            <div class="content-box-right-container w-[480px]">
+              <div class="w-full title-row flex justify-between">
+                <div class="title-row-text-box">
+                  <h1 class="font-bold text-[#2B3442] text-2xl textclrprimary" id="textclrprimary">The Octocat</h1>
+                  <p class="text-[#0079FF] font-normal text-base">@octocat</p>
+                </div>
+                <p class="fonr-normal text-base text-[#697C9A]">
+                  Joined 25 Jan 2011
+                </p>
+              </div>
+              <div class="bio-row w-full mt-5">
+                <p class="font-normal text-base text-[#4B6A9B]">
+                  This profile has no bio
+                </p>
+              </div>
+              <div
+              id="conrwbg"
+                class="result-row flex items-center justify-between w-full rounded-[10px] p-[15px_32px] mt-8 bg-[#F6F8FF]"
+              >
+                <div class="result-box">
+                  <p class="font-normal text-[#4B6A9B] text-sm">Repos</p>
+                  <h2 class="text-[#2B3442] font-bold text-2xl" id="h2-one">8</h2>
+                </div>
+                <div class="result-box">
+                  <p class="font-normal text-[#4B6A9B] text-sm">Followers</p>
+                  <h2 class="text-[#2B3442] font-bold text-2xl" id="h2-two">3938</h2>
+                </div>
+                <div class="result-box mr-[61px]">
+                  <p class="font-normal text-[#4B6A9B] text-sm">Following</p>
+                  <h2 class="text-[#2B3442] font-bold text-2xl" id="h2-three">9</h2>
+                </div>
+              </div>
+              <div class="footer-row mt-9 bg-transparent w-full">
+                <div
+                  class="fot-row-top mb-5 flex justify-between items-center pr-[51px]"
+                >
+                  <div class="icon-box flex gap-5 items-center">
+                    <img src="images/svg/location-icon.svg" alt="location" />
+                    <p class="font-normal text-[#4B6A9B] text-base">
+                      San Francisco
+                    </p>
+                  </div>
+                  <div class="icon-box flex gap-5 items-center">
+                    <img src="images/svg/Path.svg" alt="location" />
+                    <p class="font-normal text-[#4B6A9B] text-base opacity-50">
+                      Not Available
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="fot-row-bottom flex justify-between items-center pr-[78px]"
+                >
+                  <div class="icon-box flex gap-5 items-center">
+                    <img src="images/svg/002-url.svg" alt="location" />
+                    <p class="font-normal text-[#4B6A9B] text-base">
+                      https://github.blog
+                    </p>
+                  </div>
+                  <div class="icon-box flex gap-5 items-center">
+                    <img
+                      src="images/svg/001-office-building.svg"
+                      alt="location"
+                    />
+                    <p class="font-normal text-[#4B6A9B] text-base">@github</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- <script src="js/jQuery.min.js"></script> -->
+    <script src="js/app.js"></script>
+  </body>
+</html>
