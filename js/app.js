@@ -11,6 +11,10 @@ const user_repostr = document.querySelector("#user_repostr");
 const user_followers = document.querySelector("#user_followers");
 const user_following = document.querySelector("#user_following");
 const user_github_avt = document.querySelector("#github_avt");
+const user_location = document.querySelector("#user_location");
+const user_twit = document.querySelector("#user_twit");
+const user_blog = document.querySelector("#user_blog");
+const user_company = document.querySelector("#user_company");
 // end the Dom elements!
 theme_change.addEventListener("click", () => {
   // On page load or when changing themes, best to add inline in `head` to avoid FOUC
@@ -44,6 +48,26 @@ serchBtnEl.addEventListener("click", () => {
         user_followers.textContent = data.followers;
         user_following.textContent = data.following;
         user_github_avt.src = data.avatar_url;
+        if (data.location) {
+          user_location.textContent = data.location;
+        } else {
+          user_location.textContent = "Not Available";
+        }
+        if (data.blog) {
+          user_blog.textContent = data.blog;
+        } else {
+          user_blog.textContent = "Not Available";
+        }
+        if (data.twitter_username) {
+          user_twit.textContent = data.twitter_username;
+        } else {
+          user_twit.textContent = "Not Available";
+        }
+        if (data.company) {
+          user_company.textContent = data.company;
+        } else {
+          user_company.textContent = "Not Available";
+        }
         serchInpEl.value = "";
         console.log(data);
       } catch (error) {
