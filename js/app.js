@@ -15,6 +15,7 @@ const user_location = document.querySelector("#user_location");
 const user_twit = document.querySelector("#user_twit");
 const user_blog = document.querySelector("#user_blog");
 const user_company = document.querySelector("#user_company");
+const user_link = document.querySelector("#user_link");
 // end the Dom elements!
 theme_change.addEventListener("click", () => {
   // On page load or when changing themes, best to add inline in `head` to avoid FOUC
@@ -48,6 +49,7 @@ serchBtnEl.addEventListener("click", () => {
         user_followers.textContent = data.followers;
         user_following.textContent = data.following;
         user_github_avt.src = data.avatar_url;
+        user_link.textContent = data.html_url;
         if (data.location) {
           user_location.textContent = data.location;
         } else {
